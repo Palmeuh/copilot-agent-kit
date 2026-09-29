@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "bash \"$HOME/.copilot/hooks/guard-primary-checkout.sh\"",
+        "powershell": "bash \"$env:USERPROFILE/.copilot/hooks/guard-primary-checkout.sh\"",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}
